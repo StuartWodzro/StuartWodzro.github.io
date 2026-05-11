@@ -509,6 +509,7 @@ a:hover { text-decoration: underline; }
   line-height: 1.8;
   font-family: var(--font-serif);
   max-width: 500px;
+  margin-bottom: 1.2em;
 }
 
 /* ─── Footer ─── */
