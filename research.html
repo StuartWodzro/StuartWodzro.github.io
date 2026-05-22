@@ -41,6 +41,33 @@
       <h3 class="research-section-label">Journal Papers</h3>
 
       <!-- Add your research projects/publications below. Duplicate the .research-item block for each one. -->
+    <div class="research-item">
+	  <div class="research-meta"><em>IEEE Transactions on Devices and Materials Reliability</em> · 2026</div>
+	  <div class="research-title">Modeling Single-Event-Effects on FeRAM</div>
+	  
+	  <details style="margin-top: 8px;">
+		<summary style="font-size: 13px; color: var(--text-secondary); cursor: pointer;">Abstract</summary>
+		    <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.7; margin-top: 8px;">
+		      In this work, we employ 3D technology computer-aided design (TCAD) mixed-mode simulations to investigate single-event effects (SEE) in FeRAM across three distinct access-transistor geometries, prioritizing heavy-ion impingement on the access transistor.We evaluate write, hold, and read operations to elucidate the device response under varying bias configurations. The simulations are coupled with a regenerative voltage-latch sense amplifier implemented using 32~nm PTM low-power (LP) transistor models to realize the logical manifestation of the single-event effects. Under heavy-ion irradiation, the internal polarization dynamics exhibit a state-dependent response. For the Data~1 state, heavy-ion–induced charge deposition produces an electric field that degrades polarization, whereas in the Data~0 state, the induced field is constructive. This asymmetry arises from state-dependent electrostatics at the storage node. The degradation in the Data~1 state is further amplified by residual charge due to the parasitic bipolar effect present in bulk transistors. Additionally, the sense amplifier topology, whether single-ended or double-ended/differential, strongly influences the available sensing margin and thus the read robustness under radiation events.
+		    </p>
+	 </details>
+
+	 <details style="margin-top: 6px;">
+		    <summary style="font-size: 13px; color: var(--text-secondary); cursor: pointer;">Description</summary>
+		    <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.7; margin-top: 8px;">
+		      Description.
+		    </p>
+	  </details>
+  	  
+	  <a class="research-link" href="#">Read more ↗</a>
+	  <details style="margin-top: 8px;">
+	    <summary style="font-size: 12px; color: var(--text-tertiary); cursor: pointer;">Cite</summary>
+	    <code style="font-size: 11px; display: block; margin-top: 6px; color: var(--text-secondary);">
+	     S. E. Wodzro and S. Yu, "Modeling Single-Event-Effects on FeRAM," <em>IEEE Transactions on Devices and Material Reliability</em>, <em>In Press</em>.
+	    </code>
+	  </details>
+      </div>
+      
       <div class="research-item">
 	  <div class="research-meta"><em>IEEE Transactions on Electron Devices</em> · Apr. 2026</div>
 	  <div class="research-title">Threshold Voltage Variability Induced by Localized Ferroelectric Phase Distributions in FeFET and Its Mitigation Strategies</div>
@@ -48,7 +75,7 @@
 	  <details style="margin-top: 8px;">
 		<summary style="font-size: 13px; color: var(--text-secondary); cursor: pointer;">Abstract</summary>
 		    <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.7; margin-top: 8px;">
-		      Abstract.
+		      Threshold voltage variability is a key concern in ferroelectric field effect transistor (FeFET) technology. In this work, a study spanning experiments, modeling, and SPICE simulations is conducted to evaluate the impact of localized FE/ dielectric (DE) distributions on the threshold voltage (VTH) of FeFET. The device characterization is performed on the 28-nm FeFET foundry platform. The experimental study on device-to-device (D2D) and cycle-to-cycle (C2C) variations reveals that the FeFET can be an asymmetric device, with the VTH showing dependence on the direction of current flow, as well as the magnitude of applied drain voltage (VDS) to the device. The TCAD modeling study reveals that the cause of asymmetry is the spatial localization of DE phases that may occur due to the random nature of the distribution. SPICE simulation for two-FeFET-based ternary content-addressable memory (TCAM) reveals that as few as two devices exhibiting the localization-induced threshold voltage shift can lead to a 64-bit search failure. Various strategies are investigated to minimize the impact of such localized phase distribution-induced threshold voltage shift (LPTS) effect. Notably, the capacitive readout of FeFET and the insertion of a floating metal electrode in the gate-stack improve the robustness.
 		    </p>
 	 </details>
 
@@ -75,7 +102,7 @@
 	 <details style="margin-top: 8px;">
 		<summary style="font-size: 13px; color: var(--text-secondary); cursor: pointer;">Abstract</summary>
 		    <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.7; margin-top: 8px;">
-		      Abstract.
+		      NAND flash forms the core of modern solid-state storage, which is critical for data-intensive AI applications, yet charge-trap NAND suffers rapid threshold-voltage (Vth) degradation under ionizing radiation, causing reliability challenges for space and defense applications. Here we show that ferroelectric field-effect transistors (FeFETs) with laminated gate stacks offer a promising route to achieving radiation resilience in vertical NAND technology. We demonstrate that large-memory-window, vertical NAND-compatible laminated poly-silicon-channel FeFETs with an 8 nm Hf0.5Zr0.5O2/3 nm Al2O3/8 nm Hf0.5Zr0.5O2 stack retain a full memory window and robust switching up to 10 Mrad(air) of the total ionizing dose (TID). Programmed and erased states show negligible TID-induced drift after 1 Mrad(air), while only the erased state degrades by ∼2 V at 10 Mrad(air). Technology computer-aided design (TCAD) modeling attributes these asymmetric shifts to state-dependent traps. Compared to charge-trap NAND, laminated FeFETs exhibit ∼30-fold lower Vth degradation per unit dose, positioning them as superior radiation-resilient storage candidates.
 		    </p>
 	 </details>
 
@@ -102,7 +129,7 @@
 	 <details style="margin-top: 8px;">
 		<summary style="font-size: 13px; color: var(--text-secondary); cursor: pointer;">Abstract</summary>
 		    <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.7; margin-top: 8px;">
-		      Abstract.
+		      Rapid advancements in semiconductor technologies have enabled circuit operation at gigahertz (GHz) frequencies. However, conventional radiation hardening by design (RHBD) methods may encounter challenges in the GHz frequency domain, leading to increased single-event upset (SEU) rates. In this study, the SEU susceptibility of flip-flop (FF) designs in a 5-nm bulk FinFET technology node, both with and without hardening techniques, operating at frequencies up to 0.7 GHz are assessed. Comprehensive experiments involving heavy-ion and alpha particles were conducted across a wide range of supply voltages and frequencies to investigate the SEU cross sections. Results demonstrate the relationship between SEU cross section, operating frequency, and particle linear energy transfer (LET) values for FF designs employing temporal and spatial hardening techniques. Notably, all hardened designs examined in this work exhibit significantly higher SEU cross sections when operating at 0.7 GHz compared to 2.5 MHz, approaching or surpassing the SEU cross section of an unhardened conventional D-FF. These findings underscore the significance of considering high-frequency and dynamic operational data, as relying solely on static or low-frequency information can lead to a substantial underestimation of SEU cross sections, thereby elevating failure rates in deployed electronic systems.
 		    </p>
 	 </details>
 
@@ -131,7 +158,7 @@
 	 <details style="margin-top: 8px;">
 		<summary style="font-size: 13px; color: var(--text-secondary); cursor: pointer;">Abstract</summary>
 		    <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.7; margin-top: 8px;">
-		      Abstract.
+		      This work addresses a key bottleneck in radiation hardened computing: achieving high-density embedded memory in monolithically stacked (M3D) systems without relying on area inefficient SRAM or radiation-sensitive scaled Si access devices. We evaluate back-end-of-the-line (BEOL) compatible Ga-doped indium oxide (IGO) MOSFETs as access transistors for vertically integrated 1T-1C embedded DRAM (eDRAM) under both ionizing and displacement-damage radiation. Devices are subjected to60 Co gamma total-ionizing-dose (γ-TID) up to 10 MRad(air) and neutron fluence up to 10^15 n/cm2. IGO MOSFETs exhibit exceptional γ-TID tolerance: transfer characteristics, threshold voltage (VTh), and effective mobility remain statistically invariant up to 10 MRad, and sub-gap density-of-states (DOS) extraction from multi-frequency CV confirms negligible ionization-induced defect generation. In contrast, neutron irradiation produces pronounced displacement damage, manifested as positive Vth shifts, mobility degradation, and increased mid-gap and band-tail defect densities. Bias-temperature-instability (BTI) measurements show radiation accelerated parameter drift; enhanced PBTI is consistent with activation of deep traps in the HfO2 gate dielectric, while increased NBTI is consistent with radiation-assisted hydrogen diffusion. Calibrated TCAD reproduces these trends, linking γ TID primarily to modest interface-state increases and neutrons to broader/deeper defect spectra. System-level analysis indicates IGO-based 1T-1C eDRAM achieves ∼500× higher retention than silicon baselines and only a 2% retention penalty at 10 MRad (vs ∼42% for Si FinFETs), positioning BEOL IGO as a scalable access-device platform for dense, radiation-hardened monolithic eDRAM.
 		    </p>
 	 </details>
 
@@ -158,7 +185,7 @@
 	  <details style="margin-top: 8px;">
 		<summary style="font-size: 13px; color: var(--text-secondary); cursor: pointer;">Abstract</summary>
 		    <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.7; margin-top: 8px;">
-		      Abstract.
+		      Phase variations in the ferroelectric thin films are the primary cause of the threshold voltage (VTH) variation in the Ferroelectric Field Effect Transistor (FeFET). In this work, the impact of "localized" ferroelectric/dielectric (FE/DE) phase variation on FeFET is evaluated. A new phenomenon, namely, Localized Phase Distribution Induced Threshold Voltage Shift (LPTS), is experimentally characterized. Here, a scaled FeFET exhibits an asymmetric current readout that leads to a threshold voltage (VTH) shift that is dependent on the direction of current flow (when source and drain are flipped). The device characterization with device-to-device and cycle-to-cycle variations is performed on 28 nm bulk Si FeFET technology platform. The supporting TCAD simulations point towards the presence of an uneven number of FE/DE phases near Source-Channel vs Drain-Channel boundary to be the main cause of asymmetric current readout. Further, the simulation indicates that the novel non-destructive "capacitive" readout of a scaled FeFET to be more robust towards phase variation compared to the traditional current readout as the LPTS effect is amortized.
 		    </p>
 	  </details>
 
